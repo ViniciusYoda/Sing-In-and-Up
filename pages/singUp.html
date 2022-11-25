@@ -7,32 +7,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="singUp.css">
+    <link rel="stylesheet" href="../styles/singUp.css">
+    <script src="../js/singUp.js" defer></script>
     <title>Sing Up</title>
 </head>
 <body>
-    <h1>Sing Up</h1>
+    <h1>Image</h1>
     <div class="cadastrar-container">
-        <form action="./index.html" class="form-login" method="post">
+        <form action="../index.html" class="form-login" method="post">
             <ul class="login-nav">
                 <li class="login-nav__item active">
-                    <a href="#">Sign Up</a>
+                    <a href="./singUp.html">Sign Up</a>
                 </li>
                 <li class="login-nav__item">
-                    <a href="#">Sign IN</a>
+                    <a href="../index.html">Sign IN</a>
                 </li>
             </ul>
-            <label for="login-input-user" class="login__label">Nome do Usuário</label>
-            <input type="text" name="usuario" id="login-input-user" class="login__input">
+            <label for="login-input-user" class="login__label" id="label_nome">Nome do Usuário</label>
+            <input type="text" name="usuario" id="login-input-user" class="login__input" required minlength="5" maxlength="20">
             <label for="login-input-email" class="login__label">Email</label>
             <input type="email" name="email" id="login-input-email" class="login__input">
             <label for="login-input-senha" class="login__label">Senha</label>
-            <input type="password" name="senha" id="login-input-senha" class="login__input">
+            <input type="password" name="senha" id="login-input-senha" class="login__input" required minlength="8" maxlength="20">
             <label for="confirmar-senha" class="login__label">Confirmar Senha</label>
-            <input type="password" name="confirmar-senha" id="confirmar-senha" class="login__input">
+            <input type="password" name="confirmar-senha" id="confirmar-senha" class="login__input" required minlength="8" maxlength="20">
             <input type="submit" value="Sing Up" class="login__submit">
         </form>
-        <a href="index.html" class="login">Already an account?</a>
+        <a href="index.html">Already an account?</a>
     </div>
 </body>
 </html>

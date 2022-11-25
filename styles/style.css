@@ -11,6 +11,13 @@ body {
     transition: .25s all ease;
 }
 
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 3px;
+}
+
 .login-container {
     display: block;
     position: relative;
